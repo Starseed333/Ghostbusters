@@ -1,0 +1,86 @@
+body{
+	background-image: url(https://i.ytimg.com/vi/GHDbtuCbKa8/maxresdefault.jpg);
+	margin: 75px;
+}
+h1{
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+
+h3{
+	background: white;
+	color: black;
+	font-weight: bold;
+	height: 100px;
+	width: 200px;
+	margin-top: 20px;
+	font-size: 14px;
+	padding: 10px;
+
+}
+
+h4{
+	background: white;
+	color: black;
+	height: 70px;
+	width: 70px;
+	float: right;
+	margin: 20px;
+	border-style: solid;
+	margin-bottom: 60px;
+}
+
+
+#ghostbusterscore{
+	background: white;
+	height: 90px;
+	width: 90px;
+	margin-top: 20px;
+}
+
+#vigoscore{
+	background: white;
+	height: 90px;
+	width: 90px;
+	margin-top: 20px;
+}
+
+#samhainscore{
+	background: white;
+	height: 90px;
+	width: 90px;
+	margin-top: 20px;
+}
+#greenslimescore{
+	background: white;
+	height: 90px;
+	width: 90px;
+	margin-top: 20px;
+}
+
+#ghostbuster{
+	height:200px;
+	width: 200px;
+	
+}	
+
+#vigo{
+	height:200px;
+	width: 200px;
+	
+}
+
+#samhain{
+	height:200px;
+	width: 200px;
+
+}
+
+#greenslime{
+	height:200px;
+	width: 200px;
+	
+}
+
