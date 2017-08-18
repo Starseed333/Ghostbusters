@@ -8,10 +8,12 @@ $(document).ready(function(){
 	var losses = 0;
 
 
-	function gameUpdate(){
+	function gameUpdate(val){
 			if(targetNumber === ghostNumber){
 				wins++
+				alert("youw win");
 				$("#wins").html("<h4>" + wins + "</h4>");
+				console.log(wins);
 		}
 			else{(targetNumber !== ghostNumber)
 				losses++
@@ -41,7 +43,7 @@ $(document).ready(function(){
 				losses++
 				$("#losses").html("<h4>" + losses + "</h4>");
 		}
-} 
+}
 
 
 
