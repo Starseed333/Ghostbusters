@@ -1,41 +1,100 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ghostbusters Game</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Ghostbusters</title>
+
+  <!-- Link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+   <!-- Link to the Bootstrap library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  <h1>We Got One</h1>
 
-  <img src = "assets/images/ghostbuster.jpg" id="ghostbuster"/>
-  <img src = "assets/images/vigo.jpg" id="vigo"/>
-  <img src = "assets/images/samhain.jpg" id="samhain"/>
-  <img src = "assets/images/greenslime.jpg" id="greenslime"/>
+  <!-- Overall Bootstrap grid -->
+  <div class="container">
 
-  <h3 id="target-score"> Click to here to Begin, then click on the character to collect their super powers match their powers to the power to be collected and you WIN! Be careful some have more power than others... Good Luck!</h3>
+    <!-- Jumbotron with title -->
+    <div class="jumbotron">
 
-  <h2 id="ghostbusterscore"> Ghostbuster's Power</h2>
-  <h2 id="vigoscore"> Vigo's Power</h2>
-  <h2 id="samhainscore">Samhain's Power</h2>
-  <h2 id="greenslimescore">Greenslime's Power</h2>
+      <h1 class="text-center"><strong>Ghostbusters!</strong></h1>
+      <h2 class="text-center">Choose Your Character</h2>
 
-  
-  <div>
-    <h4>Wins: </h4>
-    <span id="losses"></span>
-  </div>
-  
-  
+    </div> <!-- End Jumbotron -->
+
+    <!-- Contents of the game-->
+    <div class="row">
+
+      <!-- Available characters -->
+      <div class="col-lg-12" id="characters-available">
+        
+        <span class="character-image available-character" id="ghostbuster-character">
+          <p>Ghostbuster's Power</p>
+          <!-- image -->
+          <img src="./assets/images/ghostbuster.jpg" alt="ghostbuster" id="ghostbuster-image" style="width: 200px; height: 100px">
+          <p class="health">120</p>
+        </span>
+
+        <span class="character-image available-character" id="vigo-character">
+          <p>Vigo's Power</p>
+          <!-- image -->
+          <img src="./assets/images/vigo.jpg" alt="Vigo" id="vigo-image" style="width: 200px; height: 100px">
+          <p class="health">100</p>
+        </span>
+
+        <span class="character-image available-character" id="samhain-character">
+          <p>Samhains Power</p>
+          <!-- image -->
+          <img src="./assets/images/samhain.jpg" alt="sam hain" id="samhain-image" style="width: 200px; height: 100px">
+          <p class="health">150</p>
+        </span>
+
+        <span class="character-image available-character" id="greenslime-character">
+          <p>Greenslime Power</p>
+          <!-- image -->
+          <img src="./assets/images/greenslime.jpg" alt="greenslime" id="greenslime-image" style="width: 200px; height: 100px">
+          <p class="health">180</p>
+        </span>
+      </div> <!-- End available characters -->
+
+      <!-- Your chosen character -->
+      <div class="col-lg-12" id="chosen-character">
+        <h2>Your Character</h2>
+      </div> <!-- End your chosen character-->
+
+      <!-- Enemies available to attack -->
+      <div class="col-lg-12" id="enemies-available">
+        <h2>Enemies Available To Attack</h2>
+      </div> <!-- End enemies available to attack -->
+
+      <!-- Fight section -->
+      <div class="col-lg-12" id="fight-section">
+        <h2>Fight Section</h2>
+        <button id="attack">Attack</button>
+      </div> <!-- End fight section -->
+
+      <!-- Defender section -->
+      <div class="col-lg-12" id="defender-section">
+        <h2>Defender</h2>
+      </div> <!-- End defender section -->
+
+      <!-- Game message section -->
+      <div class="col-lg-12" id="message-section">
+        <div id="game-message"></div>
+        <button id="restart">Restart</button>
+      </div> <!-- Game message section -->
+
+    </div> <!-- End contents of the game -->
+
+  </div> <!-- End Bootstrap grid -->
 
 
-  <div>
-    <h4>Losses: </h4>
-    <span id="losses"></span>
-  </div>
-  
   <div id="player">
     <audio autoplay hidden>
       <source src="assets/Ghostbusters.mp3" type="audio/mpeg">

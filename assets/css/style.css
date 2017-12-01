@@ -1,95 +1,88 @@
 body{
 	background-image: url(https://i.ytimg.com/vi/GHDbtuCbKa8/maxresdefault.jpg);
 	margin: 75px;
-}
-h1{
-	color: white;
-	font-size: 50px;
-	font-weight: bold;
-	padding-bottom: 25px;
-}
-
-h3{
-	background: white;
-	color: black;
-	font-weight: bold;
-	height: 100px;
-	width: 200px;
-	margin-top: 20px;
-	font-size: 14px;
-	padding: 10px;
-
-}
-
-h4{
-	background: white;
-	color: black;
-	height: 70px;
-	width: 70px;
-	float: right;
-	margin: 20px;
-	border-style: solid;
-	margin-bottom: 60px;
-	font-weight: bold;
+	background-attachment: fixed;
 }
 
 
-#ghostbusterscore{
-	background: white;
-	height: 90px;
-	width: 90px;
-	margin-top: 20px;
-	font-weight: bold;
+.jumbotron {
+	background-color:transparent !important;
+    padding: 0.5em 0.6em;
+    margin: 1.0em 0.0em 1.0em 0.0em;
+    color: white;
 }
 
-#vigoscore{
-	background: white;
-	height: 90px;
-	width: 90px;
-	margin-top: 20px;
-	font-weight: bold;
+.jumbotron h1 {
+	font-size: 4em;
+    color: white;
 }
 
-#samhainscore{
-	background: white;
-	height: 90px;
-	width: 90px;
-	margin-top: 20px;
-	font-weight: bold;
-}
-#greenslimescore{
-	background: white;
-	height: 90px;
-	width: 90px;
-	margin-top: 20px;
-	font-weight: bold;
+.jumbotron h2 {
+	font-size: 2em;
+    color: white;
 }
 
-#ghostbuster{
-	height:200px;
-	width: 200px;
-	font-weight: bold;
-	
-}	
-
-#vigo{
-	height:200px;
-	width: 200px;
-	font-weight: bold;
-	
+.character-image {
+	display: inline-block;
+  	height: 145px;
+	padding: 0px 20px 0px 20px;
+	margin: 0px 2px 0px 2px;
+	background-color: white;
+	border: solid;
+	border-color: green;
 }
 
-#samhain{
-	height:200px;
-	width: 200px;
-	font-weight: bold;
-
+.character-image p {
+	text-align: center;
+	margin: 0px 2px 0px 2px;
 }
 
-#greenslime{
-	height:200px;
-	width: 200px;
-	font-weight: bold;
-	
+#chosen-character {
+	height: 190px;
 }
 
+#chosen-character h2 {
+	font-size: 2em;
+    color: white;
+}
+
+.chosen-character {
+	border-color: #dd48f0;
+	background-color: #5bf048;
+}
+
+#enemies-available h2 {
+	font-size: 2em;
+    color: white;
+}
+
+.enemy-character {
+	border-color: #48f0dd;
+	background-color: #f0485b;
+	margin: 0px 2px 0px 2px;
+}
+
+#fight-section h2 {
+	font-size: 2em;
+    color: white;
+}
+
+#defender-section {
+	height: 210px;
+}
+
+#defender-section h2 {
+	font-size: 2em;
+    color: white;
+}
+
+.defender-character {
+	border-color: #485bf0;
+	background-color: #f0dd48;
+}
+
+#game-message {
+	font-size: 1.5em;
+	font-weight: bold;
+    color: 	white;
+}
